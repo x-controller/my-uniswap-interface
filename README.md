@@ -1,36 +1,35 @@
-# Uniswap Interface
+# Uniswap 界面
 
-[![Unit Tests](https://github.com/Uniswap/uniswap-interface/actions/workflows/unit-tests.yaml/badge.svg)](https://github.com/Uniswap/uniswap-interface/actions/workflows/unit-tests.yaml)
-[![Integration Tests](https://github.com/Uniswap/uniswap-interface/actions/workflows/integration-tests.yaml/badge.svg)](https://github.com/Uniswap/uniswap-interface/actions/workflows/integration-tests.yaml)
-[![Lint](https://github.com/Uniswap/uniswap-interface/actions/workflows/lint.yml/badge.svg)](https://github.com/Uniswap/uniswap-interface/actions/workflows/lint.yml)
-[![Release](https://github.com/Uniswap/uniswap-interface/actions/workflows/release.yaml/badge.svg)](https://github.com/Uniswap/uniswap-interface/actions/workflows/release.yaml)
+[![单元测试](https://github.com/Uniswap/uniswap-interface/actions/workflows/unit-tests.yaml/badge.svg)](https://github.com/Uniswap/uniswap-interface/actions/workflows/unit-tests.yaml)
+[![集成测试](https://github.com/Uniswap/uniswap-interface/actions/workflows/integration-tests.yaml/badge.svg)](https://github.com/Uniswap/uniswap-interface/actions/workflows/integration-tests.yaml)
+[![绒毛](https://github.com/Uniswap/uniswap-interface/actions/workflows/lint.yml/badge.svg)](https://github.com/Uniswap/uniswap-interface/actions/workflows/lint.yml)
+[![发布](https://github.com/Uniswap/uniswap-interface/actions/workflows/release.yaml/badge.svg)](https://github.com/Uniswap/uniswap-interface/actions/workflows/release.yaml)
 [![Crowdin](https://badges.crowdin.net/uniswap-interface/localized.svg)](https://crowdin.com/project/uniswap-interface)
 
-An open source interface for Uniswap -- a protocol for decentralized exchange of Ethereum tokens.
+Uniswap 的开源界面 —— 以太坊 token 分散交换协议。
 
-- Website: [uniswap.org](https://uniswap.org/)
-- Interface: [app.uniswap.org](https://app.uniswap.org)
-- Docs: [uniswap.org/docs/](https://docs.uniswap.org/)
+- 网站: [uniswap.org](https://uniswap.org/)
+- 界面: [app.uniswap.org](https://app.uniswap.org)
+- 文档: [uniswap.org/docs/](https://docs.uniswap.org/)
 - Twitter: [@Uniswap](https://twitter.com/Uniswap)
 - Reddit: [/r/Uniswap](https://www.reddit.com/r/Uniswap/)
 - Email: [contact@uniswap.org](mailto:contact@uniswap.org)
 - Discord: [Uniswap](https://discord.gg/FCfyBSbCU5)
-- Whitepapers:
+- 白皮书:
   - [V1](https://hackmd.io/C-DvwDSfSxuh-Gd4WKE_ig)
   - [V2](https://uniswap.org/whitepaper.pdf)
   - [V3](https://uniswap.org/whitepaper-v3.pdf)
 
-## Accessing the Uniswap Interface
+## 访问 Uniswap 界面
 
-To access the Uniswap Interface, use an IPFS gateway link from the
-[latest release](https://github.com/Uniswap/uniswap-interface/releases/latest),
-or visit [app.uniswap.org](https://app.uniswap.org).
+要访问 Uniswap 界面，请使用来自的IPFS网关链接[latest release](https://github.com/Uniswap/uniswap-interface/releases/latest),
+或者访问 [app.uniswap.org](https://app.uniswap.org).
 
-## Unsupported tokens
+## 不受支持的 tokens
 
-Check out `useUnsupportedTokenList()` in [src/state/lists/hooks.ts](./src/state/lists/hooks.ts) for blocking tokens in your instance of the interface.
+检查 `useUnsupportedTokenList()` 于 [src/state/lists/hooks.ts](./src/state/lists/hooks.ts) 用于阻止接口实例中的令牌。
 
-You can block an entire list of tokens by passing in a tokenlist like [here](./src/constants/lists.ts) or you can block specific tokens by adding them to [unsupported.tokenlist.json](./src/constants/tokenLists/unsupported.tokenlist.json).
+您可以通过传入像 [这里](./src/constants/lists.ts) 这样的代币列表来阻止整个代币列表, 也可以通过将特定代币添加到 [unsupported.tokenlist.json](./src/constants/tokenLists/unsupported.tokenlist.json)来阻止它们.
 
 ## Contributions
 
